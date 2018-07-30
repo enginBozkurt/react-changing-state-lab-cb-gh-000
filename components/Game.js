@@ -20,7 +20,7 @@ export default class Game extends React.Component {
     this.setState({
       board: [null, null, null, null, null, null, null, null, null],
     });
-    
+
   }
 
   handleClick (i, ev) {
@@ -32,7 +32,7 @@ export default class Game extends React.Component {
       board, turn
     });
   }
-  
+
   getWinner () {
     const results = solutions.map(
       (solution) => solution.map((i) => this.state.board[i]).join('')
